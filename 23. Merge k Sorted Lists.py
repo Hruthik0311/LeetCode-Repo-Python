@@ -6,7 +6,6 @@
 class Solution:
     def mergeKLists(self, lists: List[Optional[ListNode]]) -> Optional[ListNode]:
         try:
-            # Min-heap for storing (node value, list index, node)
             min_heap = []
             for idx, node in enumerate(lists):
                 if node:
